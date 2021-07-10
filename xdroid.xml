@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="xdroid"
+        fetch="https://github.com/xdroid-CAF/"
+        revision="eleven"/>
+
+<remote name="xyzuan-gitlab"
+        fetch="https://gitlab.com/xyzuan/"
+        revision="eleven"/>
+
+<!-- Build Repo -->
+  <project path="build/make" name="xd_build_make" remote="xdroid" >
+	   <copyfile src="core/root.mk" dest="Makefile"/>
+	   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
+	   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
+	   <linkfile src="core" dest="build/core"/>
+	   <linkfile src="envsetup.sh" dest="build/envsetup.sh"/>
+	   <linkfile src="target" dest="build/target"/>
+	   <linkfile src="tools" dest="build/tools"/>
+  </project>
+  <project path="build/blueprint" name="xd_build_blueprint" remote="xdroid"/>
+  <project path="build/soong" name="xd_build_soong" remote="xdroid" >
+	   <linkfile src="root.bp" dest="Android.bp"/>
+	   <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+  </project>
+
+  <!-- Device Repo -->
+  <project path="device/qcom/common" name="xd_device_qcom_common" remote="xdroid"/>
+
+  <!-- External Repo -->
+  <project path="external/arm-optimized-routines" name="xd_external_arm-optimized-routines" remote="xdroid"/>
+  <project path="external/cldr" name="xd_external_cldr" remote="xdroid" clone-depth="1"/>
+  <project path="external/exfat" name="xd_external_exfat" remote="xdroid" />
+  <project path="external/icu" name="xd_external_icu" remote="xdroid" clone-depth="1"/>
+  <project path="external/iptables" name="xd_external_iptables" remote="xdroid"/>
+  <project path="external/libcxx" name="xd_external_libcxx" remote="xdroid"/>
+  <project path="external/libpng" name="xd_external_libpng" remote="xdroid"/>
+  <project path="external/nos/host/generic" name="xd_external_nos_host_generic" remote="xdroid"/>
+  <project path="external/scudo" name="xd_external_scudo" remote="xdroid"/>
+  <project path="external/tinycompress" name="xd_external_tinycompress" remote="xdroid"/>
+  <project path="external/zlib" name="xd_external_zlib" remote="xdroid"/>
+  <project path="external/json-c" name="xd_external_json-c" remote="xdroid"/>
+  <project path="external/wpa_supplicant_8" name="xd_external_wpa_supplicant_8" remote="xdroid"/>
+
+  <!-- Framework Repo -->
+  <project path="frameworks/av" name="xd_frameworks_av" remote="xdroid"/>
+  <project path="frameworks/base" name="xd_frameworks_base" remote="xdroid"/>
+  <project path="frameworks/native" name="xd_frameworks_native" remote="xdroid"/>
+  <project path="frameworks/opt/telephony" name="xd_frameworks_opt_telephony" remote="xdroid"/>
+  <project path="frameworks/opt/net/ims" name="xd_frameworks_opt_net_ims" remote="xdroid"/>
+  <project path="frameworks/opt/net/wifi" name="xd_frameworks_opt_net_wifi" remote="xdroid"/>
+  <project path="frameworks/opt/timezonepicker" name="xd_frameworks_opt_timezonepicker" remote="xdroid"/>
+
+  <!-- Hardware Repo -->
+  <project path="hardware/interfaces" name="xd_hardware_interfaces" remote="xdroid"/>
+  <project path="hardware/xdroid/interfaces" name="xd_hardware_xdroid_interfaces" remote="xdroid"/>
+  <project path="hardware/qcom-caf/wlan" name="xd_hardware_qcom_wlan" remote="xdroid"/>
+  <project path="hardware/libhardware" name="xd_hardware_libhardware" remote="xdroid"/>
+  <project path="hardware/nxp/nfc" name="xd_hardware_nxp_nfc" remote="xdroid"/>
+  <project path="hardware/ril" name="xd_hardware_ril" remote="xdroid"/>
+
+  <!-- Packages Repo -->
+  <project path="packages/apps/Bluetooth" name="xd_packages_apps_Bluetooth" remote="xdroid"/>
+  <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xdroid"/>
+  <project path="packages/providers/ContactsProvider" name="xd_packages_providers_ContactsProvider" remote="xdroid"/>
+  <project path="packages/providers/TelephonyProvider" name="xd_packages_providers_TelephonyProvider" remote="xdroid"/>
+  <project path="packages/services/Telephony" name="xd_packages_services_Telephony" remote="xdroid"/>
+
+  <!-- Sepolicy Repo -->
+  <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xdroid"/>
+
+  <!-- System Repo -->
+  <project path="system/core" name="xd_system_core" remote="xdroid"/>
+  <project path="art" name="xd_art" remote="xdroid"/>
+  <project path="bionic" name="xd_bionic" remote="xdroid"/>
+  <project path="bootable/recovery" name="xd_bootable_recovery" remote="xdroid"/>
+
+  <!-- Vendor Repo -->
+  <project path="vendor/xdroid" name="xd_vendor_xdroid" remote="xdroid"/>
+  <project path="vendor/xdroidui" name="xd_vendor_xdroidui" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/usb" name="xd_vendor_qcom_opensource_usb" remote="xdroid"/>  
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="xd_vendor_qcom_opensource_commonsys_system_bt" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="xd_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="xdroid" revision="eleven-qti"/>
+  <project path="vendor/google/gms" name="xdroid_vendor_google_gms" remote="xyzuan-gitlab"/>
+  <project path="vendor/google/pixel" name="xd_vendor_google_pixel" remote="xdroid"/>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="conquer"
+        fetch="https://github.com/ConquerOS/"
+        revision="eleven"/>
+
+  <!-- Package Repo -->
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="conquer"/>
+  
+  <!-- Prebuilt Repo -->
+  <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="conquer"/>
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="conquer"/>
+
+  <!-- Device Repo -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="conquer"/>
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="conquer"/>
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="conquer"/>
+
+  <!-- System Repo -->
+  <project path="system/bt" name="system_bt" remote="conquer"/>
+  <project path="system/extras" name="system_extras" remote="conquer"/>
+  <project path="system/libufdt" name="system_libufdt" remote="conquer"/>
+  <project path="system/timezone" name="system_timezone" remote="conquer"/>
+  <project path="system/update_engine" name="system_update_engine" remote="conquer"/>
+  <project path="system/vold" name="system_vold" remote="conquer"/>
+  <project path="system/sepolicy" name="system_sepolicy" remote="conquer"/>
+
+  <!-- Vendor Repo -->
+  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="conquer"/>
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom-opensource_bluetooth-commonsys-intf" remote="conquer"/>
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="conquer"/>
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="conquer"/>
+  <project path="vendor/qcom/sdclang" name="vendor_qcom_sdclang" remote="conquer" clone-depth="1"/>
+
+</manifest>
