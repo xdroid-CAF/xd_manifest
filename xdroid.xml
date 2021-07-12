@@ -27,6 +27,9 @@
 
   <!-- Device Repo -->
   <project path="device/qcom/common" name="xd_device_qcom_common" remote="xdroid"/>
+  <project path="device/qcom/sepolicy" name="xd_device_qcom_sepolicy" remote="xdroid"/>
+  <project path="device/qcom/sepolicy-legacy-um" name="xd_device_qcom_sepolicy-legacy-um" remote="xdroid"/>
+  <project path="device/qcom/sepolicy_vndr" name="xd_device_qcom_sepolicy_vndr" remote="xdroid"/>
 
   <!-- External Repo -->
   <project path="external/arm-optimized-routines" name="xd_external_arm-optimized-routines" remote="xdroid"/>
@@ -62,10 +65,15 @@
 
   <!-- Packages Repo -->
   <project path="packages/apps/Bluetooth" name="xd_packages_apps_Bluetooth" remote="xdroid"/>
+  <project path="packages/apps/CellBroadcastReceiver" name="xd_packages_apps_CellBroadcastReceiver" remote="xdroid"/>
   <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xdroid"/>
   <project path="packages/providers/ContactsProvider" name="xd_packages_providers_ContactsProvider" remote="xdroid"/>
   <project path="packages/providers/TelephonyProvider" name="xd_packages_providers_TelephonyProvider" remote="xdroid"/>
   <project path="packages/services/Telephony" name="xd_packages_services_Telephony" remote="xdroid"/>
+
+  <!-- Prebuilts Repo -->
+  <project path="prebuilts/abi-dumps/ndk" name="xd_prebuilts_abi-dumps_ndk" remote="xdroid"/>
+  <project path="prebuilts/abi-dumps/vndk" name="xd_prebuilts_abi-dumps_vndk" remote="xdroid"/>
 
   <!-- Sepolicy Repo -->
   <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xdroid"/>
@@ -75,6 +83,13 @@
   <project path="art" name="xd_art" remote="xdroid"/>
   <project path="bionic" name="xd_bionic" remote="xdroid"/>
   <project path="bootable/recovery" name="xd_bootable_recovery" remote="xdroid"/>
+  <project path="system/bt" name="xd_system_bt" remote="xdroid"/>
+  <project path="system/extras" name="xd_system_extras" remote="xdroid"/>
+  <project path="system/libufdt" name="xd_system_libufdt" remote="xdroid"/>
+  <project path="system/timezone" name="xd_system_timezone" remote="xdroid"/>
+  <project path="system/update_engine" name="xd_system_update_engine" remote="xdroid"/>
+  <project path="system/vold" name="xd_system_vold" remote="xdroid"/>
+  <project path="system/sepolicy" name="xd_system_sepolicy" remote="xdroid"/>
 
   <!-- Vendor Repo -->
   <project path="vendor/xdroid" name="xd_vendor_xdroid" remote="xdroid"/>
@@ -82,6 +97,11 @@
   <project path="vendor/qcom/opensource/usb" name="xd_vendor_qcom_opensource_usb" remote="xdroid"/>  
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="xd_vendor_qcom_opensource_commonsys_system_bt" remote="xdroid"/>
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="xd_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="xdroid" revision="eleven-qti"/>
+  <project path="vendor/codeaurora/commonsys/telephony" name="xd_vendor_codeaurora_commonsys_telephony" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="xd_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/interfaces" name="xd_vendor_qcom_opensource_interfaces" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power" remote="xdroid"/>
+  <project path="vendor/qcom/sdclang" name="xd_vendor_qcom_sdclang" remote="xdroid" clone-depth="1"/>
   <project path="vendor/google/gms" name="xdroid_vendor_google_gms" remote="xyzuan-gitlab"/>
   <project path="vendor/google/pixel" name="xd_vendor_google_pixel" remote="xdroid"/>
 

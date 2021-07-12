@@ -771,7 +771,6 @@
 
   <include name="obsolete.xml"/>
   <include name="xdroid.xml"/>
-  <include name="conqueros.xml"/>
   <include name="lineage.xml"/>
 
 </manifest>
