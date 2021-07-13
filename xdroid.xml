@@ -5,6 +5,9 @@
         fetch="https://github.com/xdroid-CAF/"
         revision="eleven"/>
 
+<remote name="xyz-prjkt"
+        fetch="https://github.com/xyz-prjkt/"/>
+
 <remote name="xyzuan-gitlab"
         fetch="https://gitlab.com/xyzuan/"
         revision="eleven"/>
@@ -74,6 +77,7 @@
   <!-- Prebuilts Repo -->
   <project path="prebuilts/abi-dumps/ndk" name="xd_prebuilts_abi-dumps_ndk" remote="xdroid"/>
   <project path="prebuilts/abi-dumps/vndk" name="xd_prebuilts_abi-dumps_vndk" remote="xdroid"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-xRageTC" name="xRageTC-clang" revision="main" remote="xyz-prjkt"/>
 
   <!-- Sepolicy Repo -->
   <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xdroid"/>
