@@ -17,7 +17,7 @@ a android based on CAF with Minimalist UI Design.
 ```bash
         . build/envsetup.sh
         lunch xdroid_$devicecodename-userdebug
-        make carthage -j$(nproc --all)
+        make xd -j$(nproc --all)
 ```
 
 ### Credits ###
