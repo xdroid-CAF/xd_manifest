@@ -25,3 +25,5 @@ a android based on CAF with Minimalist UI Design.
  * [**CAF**](https://source.codeaurora.org)
  * [**ConquerOS**](https://github.com/ConquerOS)
  * [**LineageOS**](https://github.com/LineageOS)
+ * [**Project404**](https://github.com/P-404)
+ * [**POSP**](https://github.com/PotatoProject)
