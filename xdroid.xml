@@ -42,6 +42,7 @@
   <project path="external/iptables" name="xd_external_iptables" remote="xdroid"/>
   <project path="external/libcxx" name="xd_external_libcxx" remote="xdroid"/>
   <project path="external/libpng" name="xd_external_libpng" remote="xdroid"/>
+  <project path="external/motorola/faceunlock" name="xd_external_motorola_faceunlock" remote="xyzuan-gitlab"/>
   <project path="external/nos/host/generic" name="xd_external_nos_host_generic" remote="xdroid"/>
   <project path="external/scudo" name="xd_external_scudo" remote="xdroid"/>
   <project path="external/tinycompress" name="xd_external_tinycompress" remote="xdroid"/>
