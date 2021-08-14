@@ -1,5 +1,5 @@
 ![XD](https://github.com/xyz-prjkt/xyz_assets/raw/main/xd_banner.png)
-# xdroidCAF | rev1.0 Redstone
+# xdroidCAF | rev1.3 Redstone
 a android based on CAF with Minimalist UI Design.
 
 ### Requirements
