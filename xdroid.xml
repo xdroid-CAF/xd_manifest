@@ -103,6 +103,7 @@
   <project path="system/update_engine" name="xd_system_update_engine" remote="xdroid"/>
   <project path="system/vold" name="xd_system_vold" remote="xdroid"/>
   <project path="system/sepolicy" name="xd_system_sepolicy" remote="xdroid"/>
+  <project path="system/netd" name="xd_system_netd" remote="xdroid"/>
 
   <!-- Vendor Repo -->
   <project path="vendor/xdroid" name="xd_vendor_xdroid" remote="xdroid"/>

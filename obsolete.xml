@@ -93,6 +93,7 @@
   <remove-project name="platform/system/vold"/>
   <remove-project name="platform/system/update_engine"/>
   <remove-project name="platform/system/tools/mkbootimg"/>
+  <remove-project name="platform/system/netd"/>
 
   <!-- Vendor Repo -->
   <remove-project name="platform/vendor/codeaurora/telephony"/>
