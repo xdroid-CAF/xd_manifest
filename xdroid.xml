@@ -88,6 +88,7 @@
   <project path="prebuilts/abi-dumps/ndk" name="xd_prebuilts_abi-dumps_ndk" remote="xdroid"/>
   <project path="prebuilts/abi-dumps/vndk" name="xd_prebuilts_abi-dumps_vndk" remote="xdroid"/>
   <project path="prebuilts/clang/host/linux-x86/clang-xRageTC" name="xRageTC-clang" revision="main" remote="xyz-prjkt"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-xRageTC_lto" name="xRageTC-clang" revision="xRageTC_lto" remote="xyz-prjkt"/>
 
   <!-- Sepolicy Repo -->
   <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xdroid"/>
