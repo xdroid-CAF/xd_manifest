@@ -68,9 +68,12 @@
   <project path="hardware/ril" name="xd_hardware_ril" remote="xdroid"/>
 
   <!-- Hardware Qualcomm CAF Repo -->
-  <project path="hardware/qcom-caf/msm8998/audio" name="hw_audio" revision="eleven_caf-4.19" remote="xyz-prjkt" />
-  <project path="hardware/qcom-caf/msm8998/display" name="hw_display" revision="eleven_caf-4.19" remote="xyz-prjkt" />
-  <project path="hardware/qcom-caf/msm8998/media" name="hw_media" revision="eleven_caf-4.19" remote="xyz-prjkt" />
+  <project path="hardware/qcom-caf/msm8998-4.19/audio" name="hw_audio" revision="eleven_caf-4.19" remote="xyz-prjkt" />
+  <project path="hardware/qcom-caf/msm8998-4.19/display" name="hw_display" revision="eleven_caf-4.19" remote="xyz-prjkt" />
+  <project path="hardware/qcom-caf/msm8998-4.19/media" name="hw_media" revision="eleven_caf-4.19" remote="xyz-prjkt" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="hw_audio" revision="eleven_caf_msm8998" remote="xyz-prjkt" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hw_display" revision="eleven_caf_msm8998" remote="xyz-prjkt" />
+  <project path="hardware/qcom-caf/msm8998/media" name="hw_media" revision="eleven_caf_msm8998" remote="xyz-prjkt" />
 
   <!-- Packages Repo -->
   <project path="packages/apps/Bluetooth" name="xd_packages_apps_Bluetooth" remote="xdroid"/>
