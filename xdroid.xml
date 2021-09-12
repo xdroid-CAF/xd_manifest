@@ -83,6 +83,7 @@
   <project path="packages/apps/Plugins" name="xd_packages_apps_Plugins" remote="xdroid"/>
   <project path="packages/apps/ThemePicker" name="xd_packages_apps_ThemePicker" remote="xdroid"/>
   <project path="packages/apps/Updater" name="xd_packages_apps_Updater" remote="xdroid"/>
+  <project path="packages/apps/SoftAPManager" name="xd_packages_apps_SoftAPManager" remote="xdroid"/>
   <project path="packages/providers/ContactsProvider" name="xd_packages_providers_ContactsProvider" remote="xdroid"/>
   <project path="packages/providers/TelephonyProvider" name="xd_packages_providers_TelephonyProvider" remote="xdroid"/>
   <project path="packages/services/Telephony" name="xd_packages_services_Telephony" remote="xdroid"/>
