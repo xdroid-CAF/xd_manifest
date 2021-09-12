@@ -1,4 +1,4 @@
-![XD](https://github.com/xyz-prjkt/xyz_assets/raw/main/xd_banner.png)
+![XD](https://github.com/xyz-prjkt/xyz_assets/raw/main/xd_manifest.png)
 # xdroidCAF | rev1.3 RedWhite
 a android based on CAF with Minimalist UI Design.
 
