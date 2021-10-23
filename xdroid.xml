@@ -3,14 +3,14 @@
 
 <remote name="xdroid"
         fetch="https://github.com/xdroid-CAF/"
-        revision="eleven"/>
+        revision="twelve"/>
 
 <remote name="xyz-prjkt"
         fetch="https://github.com/xyz-prjkt/"/>
 
 <remote name="xyzuan-gitlab"
         fetch="https://gitlab.com/xyzuan/"
-        revision="eleven"/>
+        revision="twelve"/>
 
 <!-- Build Repo -->
   <project path="build/make" name="xd_build_make" remote="xdroid" >
@@ -22,52 +22,48 @@
 	   <linkfile src="target" dest="build/target"/>
 	   <linkfile src="tools" dest="build/tools"/>
   </project>
-  <project path="build/blueprint" name="xd_build_blueprint" remote="xdroid"/>
   <project path="build/soong" name="xd_build_soong" remote="xdroid" >
 	   <linkfile src="root.bp" dest="Android.bp"/>
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
 
   <!-- Device Repo -->
-  <project path="device/qcom/common" name="xd_device_qcom_common" remote="xdroid"/>
-  <project path="device/qcom/sepolicy" name="xd_device_qcom_sepolicy" remote="xdroid"/>
-  <project path="device/qcom/sepolicy-legacy-um" name="xd_device_qcom_sepolicy-legacy-um" remote="xdroid"/>
-  <project path="device/qcom/sepolicy_vndr" name="xd_device_qcom_sepolicy_vndr" remote="xdroid"/>
+  <project path="device/qcom/common" name="xd_device_qcom_common" remote="xdroid">
+        <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
 
   <!-- External Repo -->
-  <project path="external/arm-optimized-routines" name="xd_external_arm-optimized-routines" remote="xdroid"/>
-  <project path="external/cldr" name="xd_external_cldr" remote="xdroid" clone-depth="1"/>
-  <project path="external/exfat" name="xd_external_exfat" remote="xdroid" />
-  <project path="external/icu" name="xd_external_icu" remote="xdroid" clone-depth="1"/>
-  <project path="external/iptables" name="xd_external_iptables" remote="xdroid"/>
-  <project path="external/libcxx" name="xd_external_libcxx" remote="xdroid"/>
-  <project path="external/libpng" name="xd_external_libpng" remote="xdroid"/>
-  <project path="external/motorola/faceunlock" name="xd_external_motorola_faceunlock" remote="xyzuan-gitlab"/>
-  <project path="external/nos/host/generic" name="xd_external_nos_host_generic" remote="xdroid"/>
-  <project path="external/scudo" name="xd_external_scudo" remote="xdroid"/>
-  <project path="external/tinycompress" name="xd_external_tinycompress" remote="xdroid"/>
-  <project path="external/zlib" name="xd_external_zlib" remote="xdroid"/>
-  <project path="external/json-c" name="xd_external_json-c" remote="xdroid"/>
-  <project path="external/wpa_supplicant_8" name="xd_external_wpa_supplicant_8" remote="xdroid"/>
+  <project path="external/colorkt" name="xd_external_colorkt" remote="xdroid"/>
+  <project path="external/themelib" name="xd_external_themelib" remote="xdroid"/> 
 
   <!-- Framework Repo -->
-  <project path="frameworks/av" name="xd_frameworks_av" remote="xdroid"/>
   <project path="frameworks/base" name="xd_frameworks_base" remote="xdroid"/>
-  <project path="frameworks/native" name="xd_frameworks_native" remote="xdroid"/>
-  <project path="frameworks/opt/telephony" name="xd_frameworks_opt_telephony" remote="xdroid"/>
-  <project path="frameworks/opt/net/ims" name="xd_frameworks_opt_net_ims" remote="xdroid"/>
-  <project path="frameworks/opt/net/wifi" name="xd_frameworks_opt_net_wifi" remote="xdroid"/>
-  <project path="frameworks/opt/timezonepicker" name="xd_frameworks_opt_timezonepicker" remote="xdroid"/>
 
   <!-- Hardware Repo -->
-  <project path="hardware/interfaces" name="xd_hardware_interfaces" remote="xdroid"/>
+  <project path="hardware/qcom/wlan" name="xd_hardware_qcom_wlan" remote="xdroid"/>
   <project path="hardware/xdroid/interfaces" name="xd_hardware_xdroid_interfaces" remote="xdroid"/>
-  <project path="hardware/qcom-caf/wlan" name="xd_hardware_qcom_wlan" remote="xdroid"/>
-  <project path="hardware/libhardware" name="xd_hardware_libhardware" remote="xdroid"/>
-  <project path="hardware/nxp/nfc" name="xd_hardware_nxp_nfc" remote="xdroid"/>
-  <project path="hardware/ril" name="xd_hardware_ril" remote="xdroid"/>
 
   <!-- Hardware Qualcomm CAF Repo -->
+  <project path="hardware/qcom-caf/common" name="xd_hardware_qcom-caf_common" remote="xdroid"  >
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk"/>
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk"/>
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998-4.19/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998-4.19/Android.mk"/>
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk"/>
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk"/>
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk"/>
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk"/>
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk"/>
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp"/>
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk"/>
+  </project>
   <project path="hardware/qcom-caf/msm8998-4.19/audio" name="hw_audio" revision="eleven_caf-4.19" remote="xyz-prjkt" />
   <project path="hardware/qcom-caf/msm8998-4.19/display" name="hw_display" revision="eleven_caf-4.19" remote="xyz-prjkt" />
   <project path="hardware/qcom-caf/msm8998-4.19/media" name="hw_media" revision="eleven_caf-4.19" remote="xyz-prjkt" />
@@ -77,54 +73,47 @@
   <project path="hardware/qcom-caf/sm8150/display" name="hw_display_sm8150" revision="eleven_caf_sm8150" remote="xyz-prjkt"/>
 
   <!-- Packages Repo -->
-  <project path="packages/apps/Bluetooth" name="xd_packages_apps_Bluetooth" remote="xdroid"/>
-  <project path="packages/apps/CellBroadcastReceiver" name="xd_packages_apps_CellBroadcastReceiver" remote="xdroid"/>
   <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xdroid"/>
-  <project path="packages/apps/SettingsIntelligence" name="xd_packages_apps_SettingsIntelligence" remote="xdroid"/>
-  <project path="packages/apps/Xzrypr" name="xd_packages_apps_Xzrypr" remote="xdroid"/>
-  <project path="packages/apps/Plugins" name="xd_packages_apps_Plugins" remote="xdroid"/>
-  <project path="packages/apps/ThemePicker" name="xd_packages_apps_ThemePicker" remote="xdroid"/>
-  <project path="packages/apps/Updater" name="xd_packages_apps_Updater" remote="xdroid"/>
-  <project path="packages/apps/SoftAPManager" name="xd_packages_apps_SoftAPManager" remote="xdroid"/>
-  <project path="packages/providers/ContactsProvider" name="xd_packages_providers_ContactsProvider" remote="xdroid"/>
-  <project path="packages/providers/TelephonyProvider" name="xd_packages_providers_TelephonyProvider" remote="xdroid"/>
-  <project path="packages/services/Telephony" name="xd_packages_services_Telephony" remote="xdroid"/>
+  <project path="packages/modules/Permission" name="xd_packages_modules_Permission" remote="xdroid"/>
+  <project path="packages/modules/Wifi" name="xd_packages_modules_Wifi" remote="xdroid"/>
+  <project path="packages/modules/Connectivity" name="xd_packages_modules_Connectivity" remote="xdroid"/>
 
   <!-- Prebuilts Repo -->
-  <project path="prebuilts/abi-dumps/ndk" name="xd_prebuilts_abi-dumps_ndk" remote="xdroid"/>
-  <project path="prebuilts/abi-dumps/vndk" name="xd_prebuilts_abi-dumps_vndk" remote="xdroid"/>
   <project path="prebuilts/clang/host/linux-x86/clang-xRageTC" name="xRageTC-clang" revision="main" remote="xyz-prjkt"/>
   <!-- project path="prebuilts/clang/host/linux-x86/clang-xRageTC_lto" name="xRageTC-clang" revision="xRageTC_lto" remote="xyz-prjkt"/ -->
 
   <!-- Sepolicy Repo -->
   <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xdroid"/>
+  <project path="device/qcom/sepolicy" name="xd_device_qcom_sepolicy" remote="xdroid"/>
+  <project path="device/qcom/sepolicy-legacy-um" name="xd_device_qcom_sepolicy-legacy-um" remote="xdroid"/>
+  <project path="device/qcom/sepolicy_vndr" name="xd_device_qcom_sepolicy_vndr" remote="xdroid"/>
+  <project path="system/sepolicy" name="xd_system_sepolicy" remote="xdroid"/>
 
   <!-- System Repo -->
-  <project path="system/core" name="xd_system_core" remote="xdroid"/>
-  <project path="art" name="xd_art" remote="xdroid"/>
-  <project path="bionic" name="xd_bionic" remote="xdroid"/>
-  <project path="bootable/recovery" name="xd_bootable_recovery" remote="xdroid"/>
-  <project path="system/bt" name="xd_system_bt" remote="xdroid"/>
-  <project path="system/extras" name="xd_system_extras" remote="xdroid"/>
-  <project path="system/libufdt" name="xd_system_libufdt" remote="xdroid"/>
-  <project path="system/timezone" name="xd_system_timezone" remote="xdroid"/>
-  <project path="system/update_engine" name="xd_system_update_engine" remote="xdroid"/>
-  <project path="system/vold" name="xd_system_vold" remote="xdroid"/>
-  <project path="system/sepolicy" name="xd_system_sepolicy" remote="xdroid"/>
-  <project path="system/netd" name="xd_system_netd" remote="xdroid"/>
+  <project path="system/core" name="system_core" remote="xdroid"/>
+  <project path="system/tools/hidl" name="system_tools_hidl" remote="xdroid"/> 
 
   <!-- Vendor Repo -->
+  <project path="vendor/pixel-framework" name="xd_vendor_pixel-framework" remote="xdroid"/>
   <project path="vendor/xdroid" name="xd_vendor_xdroid" remote="xdroid"/>
   <project path="vendor/xdroidui" name="xd_vendor_xdroidui" remote="xdroid"/>
-  <project path="vendor/qcom/opensource/usb" name="xd_vendor_qcom_opensource_usb" remote="xdroid"/>  
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="xd_vendor_qcom_opensource_commonsys_system_bt" remote="xdroid"/>
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="xd_vendor_qcom_opensource_commonsys_packages_apps_Bluetooth" remote="xdroid" revision="eleven-qti"/>
-  <project path="vendor/codeaurora/commonsys/telephony" name="xd_vendor_codeaurora_commonsys_telephony" remote="xdroid"/>
-  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="xd_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="xdroid"/>
+
+  <!-- Vendor CAF -->
+  <project path="vendor/qcom/common" name="xd_vendor_qcom_common"  remote="xdroid"/>
+  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power"  remote="xdroid">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
+  </project>
   <project path="vendor/qcom/opensource/interfaces" name="xd_vendor_qcom_opensource_interfaces" remote="xdroid"/>
-  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power" remote="xdroid"/>
-  <project path="vendor/qcom/sdclang" name="xd_vendor_qcom_sdclang" remote="xdroid" clone-depth="1"/>
-  <project path="vendor/google/gms" name="xdroid_vendor_google_gms" remote="xyzuan-gitlab"/>
-  <project path="vendor/google/pixel" name="xd_vendor_google_pixel" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/commonsys/fm" name="xd_vendor_qcom_opensource_commonsys_fm" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_vibrator" remote="xdroid"/>
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="xd_vendor_qcom_opensource_commonsys-intf_display" remote="xdroid">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
+  </project>
+  <project path="vendor/codeaurora/commonsys/telephony" name="xd_vendor_codeaurora_telephony" remote="xdroid"/>
+
+  <!-- Others Common -->
+  <project path="libcore" name="xd_libcore" remote="xdroid"/>
 
 </manifest>

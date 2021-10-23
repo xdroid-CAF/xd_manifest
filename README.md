@@ -1,5 +1,5 @@
 ![XD](https://github.com/xyz-prjkt/xyz_assets/raw/main/xd_manifest.png)
-# xdroidCAF | rev1.6 redwhite
+# xdroidCAF | CAF_QSSI.12.*** - mnmlistyou
 a android based on CAF with Minimalist UI Design.
 
 ### Requirements
@@ -8,7 +8,7 @@ a android based on CAF with Minimalist UI Design.
 
 ### Sync our source ###
 ```bash
-        repo init -u https://github.com/xdroid-CAF/xd_manifest -b eleven
+        repo init -u https://github.com/xdroid-CAF/xd_manifest -b twelve
 ```
 ```bash
         repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
