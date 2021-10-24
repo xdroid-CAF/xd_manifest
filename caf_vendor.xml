@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="caf_vendor"
-          fetch="https://source.codeaurora.org/quic/la"
-          review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.14.r1-18300.02-LAHAINA.QSSI12.0"/>
 
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" remote="caf_vendor"/>
   <project name="kernel/build" path="device/qcom/kernelscripts" remote="caf_vendor"/>
@@ -75,4 +71,5 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
   </project>
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" remote="caf_vendor"/>
+
 </manifest>
