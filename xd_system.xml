@@ -70,7 +70,6 @@
   <!-- Prebuilts Repo -->
   <project path="prebuilts/clang/host/linux-x86/clang-xRageTC" name="xRageTC-clang" revision="main" remote="xyz-prjkt"/>
   <project path="prebuilts/extract-tools" name="xd_prebuilts_extract-tools" remote="xd" clone-depth="1"/>
-  <project path="prebuilts/build-tools" name="xd_prebuilts_build-tools" remote="xd" clone-depth="1"/>
   <project path="prebuilts/tools-xdroid" name="xd_prebuilts_tools-xdroid" remote="xd" clone-depth="1"/>
   <project path="tools/extract-utils" name="xd_tools_extract-utils" remote="xd"/>
   <!-- project path="prebuilts/clang/host/linux-x86/clang-xRageTC_lto" name="xRageTC-clang" revision="xRageTC_lto" remote="xyz-prjkt"/ -->
