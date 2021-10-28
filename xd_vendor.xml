@@ -20,5 +20,6 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>
   <project path="vendor/codeaurora/commonsys/telephony" name="xd_vendor_codeaurora_telephony" remote="xd"/>
+  <project path="vendor/qcom/sdclang" name="xd_vendor_qcom_sdclang" remote="xd" clone-depth="1"/>
 
 </manifest>
