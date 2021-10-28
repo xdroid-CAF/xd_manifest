@@ -14,6 +14,9 @@
   <project path="vendor/qcom/opensource/interfaces" name="xd_vendor_qcom_opensource_interfaces" remote="xd"/>
   <project path="vendor/qcom/opensource/commonsys/fm" name="xd_vendor_qcom_opensource_commonsys_fm" remote="xd"/>
   <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_vibrator" remote="xd"/>
+  <project path="vendor/qcom/opensource/usb" name="xd_vendor_qcom_opensource_usb" remote="xd">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>  
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="xd_vendor_qcom_opensource_commonsys-intf_display" remote="xd">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
