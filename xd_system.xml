@@ -16,11 +16,6 @@
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
   </project>
 
-  <!-- Device Repo -->
-  <project path="device/qcom/common" name="xd_device_qcom_common" remote="xd">
-        <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
-
   <!-- External Repo -->
   <project path="external/colorkt" name="xd_external_colorkt" remote="xd"/>
   <project path="external/themelib" name="xd_external_themelib" remote="xd"/> 

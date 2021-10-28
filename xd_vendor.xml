@@ -7,7 +7,6 @@
   <project path="vendor/xdroidui" name="xd_vendor_xdroidui" remote="xd"/>
 
   <!-- Vendor CAF -->
-  <project path="vendor/qcom/common" name="xd_vendor_qcom_common"  remote="xd"/>
   <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power"  remote="xd">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
