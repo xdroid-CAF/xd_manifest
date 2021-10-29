@@ -30,7 +30,6 @@
   <remove-project name="device/google/atv"/>
   <remove-project name="device/google/trout"/>
   <remove-project name="device/google/vrservices"/>
-  <remove-project name="device/sample"/>
   <remove-project name="device/qcom/sepolicy"/>
 
   <!-- Framework Repo -->
