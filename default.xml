@@ -42,5 +42,6 @@
   <include name="obsolete.xml"/>
   <include name="xd_system.xml"/>
   <include name="xd_vendor.xml"/>
+  <include name="xd_hw.xml"/>
 
 </manifest>
