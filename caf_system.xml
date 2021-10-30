@@ -79,7 +79,7 @@
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
   <project name="platform/compatibility/cdd" path="compatibility/cdd"/>
-  <project name="platform/cts" path="cts" clone-depth="1"/>
+  <project name="platform/cts" path="cts"/>
   <project name="platform/dalvik" path="dalvik"/>
   <project name="platform/developers/build" path="developers/build"/>
   <project name="platform/development" path="development"/>
@@ -125,7 +125,7 @@
   <project name="platform/external/cblas" path="external/cblas"/>
   <project name="platform/external/cbor-java" path="external/cbor-java"/>
   <project name="platform/external/chromium-trace" path="external/chromium-trace"/>
-  <project clone-depth="1" name="platform/external/chromium-webview" path="external/chromium-webview"/>
+  <project name="platform/external/chromium-webview" path="external/chromium-webview"/>
   <project name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cldr" path="external/cldr"/>
   <project name="platform/external/cn-cbor" path="external/cn-cbor"/>
@@ -150,7 +150,7 @@
   <project name="platform/external/dng_sdk" path="external/dng_sdk"/>
   <project name="platform/external/dnsmasq" path="external/dnsmasq"/>
   <project name="platform/external/doclava" path="external/doclava"/>
-  <project name="platform/external/dokka" path="external/dokka" clone-depth="1"/>
+  <project name="platform/external/dokka" path="external/dokka"/>
   <project name="platform/external/downloader" path="external/downloader"/>
   <project name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer"/>
   <project name="platform/external/drrickorang" path="external/drrickorang"/>
@@ -218,7 +218,7 @@
   <project name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng"/>
   <project name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns"/>
   <project name="platform/external/icing" path="external/icing"/>
-  <project name="platform/external/icu" path="external/icu" clone-depth="1"/>
+  <project name="platform/external/icu" path="external/icu"/>
   <project name="platform/external/igt-gpu-tools" path="external/igt-gpu-tools"/>
   <project name="platform/external/image_io" path="external/image_io"/>
   <project name="platform/external/ims" path="external/ims"/>
@@ -306,7 +306,7 @@
   <project name="platform/external/libxkbcommon" path="external/libxkbcommon"/>
   <project name="platform/external/libxml2" path="external/libxml2"/>
   <project name="platform/external/libyuv" path="external/libyuv"/>
-  <project name="platform/external/linux-kselftest" path="external/linux-kselftest" clone-depth="1"/>
+  <project name="platform/external/linux-kselftest" path="external/linux-kselftest"/>
   <project name="platform/external/llvm" path="external/llvm"/>
   <project name="platform/external/lmfit" path="external/lmfit"/>
   <project name="platform/external/lottie" path="external/lottie"/>
@@ -589,7 +589,7 @@
   <project name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers"/>
   <project name="platform/external/shflags" path="external/shflags"/>
   <project name="platform/external/skia" path="external/skia"/>
-  <project clone-depth="1" name="platform/external/skqp" path="external/skqp"/>
+  <project name="platform/external/skqp" path="external/skqp"/>
   <project name="platform/external/sl4a" path="external/sl4a"/>
   <project name="platform/external/slf4j" path="external/slf4j"/>
   <project name="platform/external/smali" path="external/smali"/>
@@ -602,7 +602,7 @@
   <project name="platform/external/starlark-go" path="external/starlark-go"/>
   <project name="platform/external/strace" path="external/strace"/>
   <project name="platform/external/stressapptest" path="external/stressapptest"/>
-  <project clone-depth="1" name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view" />
+  <project name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view"/>
   <project name="platform/external/swiftshader" path="external/swiftshader"/>
   <project name="platform/external/tagsoup" path="external/tagsoup"/>
   <project name="platform/external/tcpdump" path="external/tcpdump"/>
@@ -652,7 +652,7 @@
   <project name="platform/frameworks/compile/slang" path="frameworks/compile/slang"/>
   <project name="platform/frameworks/ex" path="frameworks/ex"/>
   <project name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces"/>
-  <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib" clone-depth="1"/>
+  <project name="platform/frameworks/layoutlib" path="frameworks/layoutlib"/>
   <project name="platform/frameworks/libs/modules-utils" path="frameworks/libs/modules-utils"/>
   <project name="platform/frameworks/libs/native_bridge_support" path="frameworks/libs/native_bridge_support"/>
   <project name="platform/frameworks/libs/net" path="frameworks/libs/net"/>
@@ -754,6 +754,7 @@
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
   <project name="platform/packages/apps/QuickAccessWallet" path="packages/apps/QuickAccessWallet"/>
+  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/>
   <project name="platform/packages/apps/RemoteProvisioner" path="packages/apps/RemoteProvisioner"/>
   <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo"/>
   <project name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution"/>
@@ -829,7 +830,7 @@
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
   <project name="platform/pdk" path="pdk"/>
   <project name="platform/platform_testing" path="platform_testing"/>
-  <project clone-depth="1" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk"/>
+  <project name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk"/>
   <project name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform"/>
   <project name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk"/>
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator"/>
@@ -846,7 +847,7 @@
   <project name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk"/>
   <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
   <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/>
-  <project clone-depth="1" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"/>
   <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"/>
@@ -1002,6 +1003,9 @@
   <project name="platform/vendor/qcom-opensource/core-utils-sys" path="vendor/qcom/opensource/core-utils-sys"/>
   <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw"/>
   <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+  </project>
   <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
