@@ -30,7 +30,6 @@
   <remove-project name="device/google/atv"/>
   <remove-project name="device/google/trout"/>
   <remove-project name="device/google/vrservices"/>
-  <remove-project name="device/qcom/sepolicy"/>
 
   <!-- Framework Repo -->
   <remove-project name="platform/frameworks/base"/>
@@ -63,6 +62,10 @@
 
   <!-- Recovery Repo -->  
   <remove-project name="platform/bootable/recovery"/>
+
+  <!-- Sepolicy Repo -->
+  <remove-project name="device/qcom/sepolicy_vndr"/>
+  <remove-project name="device/qcom/sepolicy"/>
 
   <!-- System Repo -->
   <remove-project name="platform/system/core"/>
