@@ -40,6 +40,8 @@
   <remove-project name="platform/hardware/qcom/gps"/>
   <remove-project name="platform/hardware/qcom/media"/>
   <remove-project name="platform/hardware/qcom/wlan"/>
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <remove-project name="platform/hardware/nxp/secure_element" />
 
   <!-- Packages Repo -->
   <remove-project name="platform/packages/apps/Settings"/>
