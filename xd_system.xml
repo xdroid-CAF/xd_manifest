@@ -23,10 +23,6 @@
   <!-- Framework Repo -->
   <project path="frameworks/base" name="xd_frameworks_base" remote="xd"/>
 
-  <!-- Hardware Repo -->
-  <project path="hardware/qcom/wlan" name="xd_hardware_qcom_wlan" remote="xd"/>
-  <project path="hardware/xdroid/interfaces" name="xd_hardware_xdroid_interfaces" remote="xd"/>
-
   <!-- Packages Repo -->
   <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xd"/>
   <project path="packages/modules/Permission" name="xd_packages_modules_Permission" remote="xd"/>
