@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Hardware Qualcomm CAF Repo
-  <project path="hardware/qcom-caf/common" name="xd_hardware_qcom-caf_common" remote="xd"  >
+  <!-- Hardware Qualcomm CAF Repo -->
+  <project path="hardware/qcom-caf/common" name="xd_hardware_qcom-caf_common" remote="xd">
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp"/>
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk"/>
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp"/>
@@ -20,8 +20,8 @@
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp"/>
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk"/>
   </project>
-  <project path="hardware/qcom-caf/msm8998/audio" name="hw_audio" revision="eleven_caf_msm8998" remote="xyz-prjkt" />
-  <project path="hardware/qcom-caf/msm8998/display" name="hw_display" revision="eleven_caf_msm8998" remote="xyz-prjkt" />
-  <project path="hardware/qcom-caf/msm8998/media" name="hw_media" revision="eleven_caf_msm8998" remote="xyz-prjkt" /> -->
+  <project path="hardware/qcom-caf/msm8998/audio" name="xd_hardware_qcom_audio" revision="twelve_caf_msm8998" remote="xd"/>
+  <project path="hardware/qcom-caf/msm8998/display" name="xd_hardware_qcom_display" revision="twelve_caf_msm8998" remote="xd"/>
+  <project path="hardware/qcom-caf/msm8998/media" name="xd_hardware_qcom_media" revision="twelve_caf_msm8998" remote="xd"/>
 
 </manifest>
