@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Hardware Qualcomm CAF Repo -->
+  <!-- Hardware Qualcomm CAF Repo 
   <project path="hardware/qcom-caf/common" name="xd_hardware_qcom-caf_common" remote="xd">
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp"/>
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk"/>
@@ -22,6 +22,6 @@
   </project>
   <project path="hardware/qcom-caf/msm8998/audio" name="xd_hardware_qcom_audio" revision="twelve_caf_msm8998" remote="xd"/>
   <project path="hardware/qcom-caf/msm8998/display" name="xd_hardware_qcom_display" revision="twelve_caf_msm8998" remote="xd"/>
-  <project path="hardware/qcom-caf/msm8998/media" name="xd_hardware_qcom_media" revision="twelve_caf_msm8998" remote="xd"/>
+  <project path="hardware/qcom-caf/msm8998/media" name="xd_hardware_qcom_media" revision="twelve_caf_msm8998" remote="xd"/> -->
 
 </manifest>
