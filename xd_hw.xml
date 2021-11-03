@@ -26,14 +26,7 @@
   <project path="hardware/qcom-caf/msm8998/audio" name="xd_hardware_qcom_audio" revision="twelve_caf_msm8998" groups="qcom,qcom_audio,pdk-qcom" remote="xd"/>
   <project path="hardware/qcom-caf/msm8998/display" name="xd_hardware_qcom_display" revision="twelve_caf_msm8998" groups="pdk-qcom,qcom,qcom_display" remote="xd"/>
   <project path="hardware/qcom-caf/msm8998/media" name="xd_hardware_qcom_media" revision="twelve_caf_msm8998" groups="qcom,pdk-qcom" remote="xd"/>
-  
-  <project path="hardware/qcom-caf/kernel-headers" name="xd_hardware_qcom-caf_kernel-headers" remote="xd">
-    <linkfile src="msm-4.4" dest="hardware/qcom-caf/msm8998/kernel-headers" />
-    <linkfile src="msm-4.9" dest="hardware/qcom-caf/sdm845/kernel-headers" />
-    <linkfile src="msm-4.14" dest="hardware/qcom-caf/sm8150/kernel-headers" />
-    <linkfile src="msm-5.4" dest="hardware/qcom-caf/sm8350/kernel-headers" />
-  </project>
-  
+
   <project path="hardware/qcom-caf/wlan" name="xd_hardware_qcom_wlan" remote="xd"/>
   <project path="hardware/xdroid/interfaces" name="xd_hardware_xdroid_interfaces" remote="xd"/>
 
