@@ -28,6 +28,7 @@
   <project path="hardware/qcom-caf/msm8998/media" name="xd_hardware_qcom_media" revision="twelve_caf_msm8998" groups="qcom,pdk-qcom" remote="xd"/>
 
   <project path="hardware/qcom-caf/wlan" name="xd_hardware_qcom_wlan" remote="xd"/>
+  <project path="hardware/libhardware" name="xd_hardware_libhardware" remote="xd"/>
   <project path="hardware/xdroid/interfaces" name="xd_hardware_xdroid_interfaces" remote="xd"/>
 
 </manifest>
