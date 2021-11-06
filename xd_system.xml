@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- Build Repo -->
+  <!-- Build Repo -->
+  <remove-project name="platform/art" />
+  <project path="art" name="xd_art" remote="xd" />
+  <remove-project name="platform/build" />
   <project path="build/make" name="xd_build_make" remote="xd" >
 	   <copyfile src="core/root.mk" dest="Makefile"/>
 	   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
@@ -11,9 +14,16 @@
 	   <linkfile src="target" dest="build/target"/>
 	   <linkfile src="tools" dest="build/tools"/>
   </project>
+  <remove-project name="platform/build/soong" />
   <project path="build/soong" name="xd_build_soong" remote="xd" >
 	   <linkfile src="root.bp" dest="Android.bp"/>
 	   <linkfile src="bootstrap.bash" dest="bootstrap.bash"/>
+  </project>
+
+  <!-- Device Repo -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="xd_device_qcom_common" remote="xd" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
 
   <!-- External Repo -->
@@ -21,12 +31,17 @@
   <project path="external/themelib" name="xd_external_themelib" remote="xd"/> 
 
   <!-- Framework Repo -->
+  <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="xd_frameworks_base" remote="xd"/>
 
   <!-- Packages Repo -->
+  <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="xd_packages_apps_Settings" remote="xd"/>
+  <remove-project name="platform/packages/modules/Permission" />
   <project path="packages/modules/Permission" name="xd_packages_modules_Permission" remote="xd"/>
+  <remove-project name="platform/packages/modules/Wifi" />
   <project path="packages/modules/Wifi" name="xd_packages_modules_Wifi" remote="xd"/>
+  <remove-project name="platform/packages/modules/Connectivity" />
   <project path="packages/modules/Connectivity" name="xd_packages_modules_Connectivity" remote="xd"/>
 
   <!-- Prebuilts Repo -->
@@ -38,17 +53,24 @@
 
   <!-- Sepolicy Repo -->
   <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xd"/>
+  <remove-project name="device/qcom/sepolicy" />
   <project path="device/qcom/sepolicy" name="xd_device_qcom_sepolicy" remote="xd"/>
   <project path="device/qcom/sepolicy-legacy-um" name="xd_device_qcom_sepolicy-legacy-um" remote="xd"/>
+  <remove-project name="device/qcom/sepolicy_vndr" />
   <project path="device/qcom/sepolicy_vndr" name="xd_device_qcom_sepolicy_vndr" remote="xd"/>
+  <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="xd_system_sepolicy" remote="xd"/>
 
   <!-- System Repo -->
+  <remove-project name="platform/system/core" />
   <project path="system/core" name="xd_system_core" remote="xd"/>
+  <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="xd_system_tools_hidl" remote="xd"/> 
 
   <!-- Others Common -->
+  <remove-project name="platform/libcore" />
   <project path="libcore" name="xd_libcore" remote="xd"/>
+  <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="xd_bootable_recovery" remote="xd"/>
 
 </manifest>

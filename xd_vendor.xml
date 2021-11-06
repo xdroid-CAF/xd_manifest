@@ -7,13 +7,37 @@
   <project path="vendor/xdroidui" name="xd_vendor_xdroidui" remote="xd"/>
 
   <!-- Vendor CAF -->
-  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power"  remote="xd"/>
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="xd_vendor_qcom_opensource_power"  remote="xd">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <project path="vendor/qcom/opensource/interfaces" name="xd_vendor_qcom_opensource_interfaces" remote="xd"/>
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <project path="vendor/qcom/opensource/commonsys/fm" name="xd_vendor_qcom_opensource_commonsys_fm" remote="xd"/>
-  <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_vibrator" remote="xd"/>
-  <project path="vendor/qcom/opensource/usb" name="xd_vendor_qcom_opensource_usb" remote="xd"/>
-  <project path="vendor/qcom/opensource/commonsys/display" name="xd_vendor_qcom_opensource_display-commonsys" remote="xd"/>
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="xd_vendor_qcom_opensource_commonsys-intf_display" remote="xd"/>
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="xd_vendor_qcom_opensource_vibrator" remote="xd">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="xd_vendor_qcom_opensource_usb" remote="xd">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="xd_vendor_qcom_opensource_display-commonsys" remote="xd">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="xd_vendor_qcom_opensource_commonsys-intf_display" remote="xd">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="xd_vendor_qcom_opensource_commonsys-intf_bluetooth" remote="xd"/>
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="xd_vendor_qcom_opensource_commonsys_cryptfs_hw" remote="xd"/>
+  <remove-project name="platform/vendor/codeaurora/telephony" />
   <project path="vendor/codeaurora/commonsys/telephony" name="xd_vendor_codeaurora_telephony" remote="xd"/>
   <project path="vendor/qcom/sdclang" name="xd_vendor_qcom_sdclang" remote="xd" clone-depth="1"/>
 

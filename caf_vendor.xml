@@ -2,6 +2,11 @@
 <manifest>
 
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" remote="caf_vendor"/>
+  <project name="device/qcom/common" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project name="device/qcom/sepolicy_vndr" remote="caf_vendor"/>
+  <project name="device/qcom/vendor-common" remote="caf_vendor"/>
   <project name="kernel/build" path="device/qcom/kernelscripts" remote="caf_vendor"/>
   <project groups="cyborg" name="kernel/msm-5.4" remote="caf_vendor"/>
   <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="caf_vendor"/>
