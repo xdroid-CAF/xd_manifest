@@ -27,7 +27,6 @@
   <project path="hardware/qcom-caf/msm8998/display" name="xd_hardware_qcom_display" revision="twelve_caf_msm8998" groups="pdk-qcom,qcom,qcom_display" remote="xd"/>
   <project path="hardware/qcom-caf/msm8998/media" name="xd_hardware_qcom_media" revision="twelve_caf_msm8998" groups="qcom,pdk-qcom" remote="xd"/>
 
-  <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom-caf/wlan" name="xd_hardware_qcom_wlan" remote="xd"/>
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="xd_hardware_libhardware" remote="xd"/>
