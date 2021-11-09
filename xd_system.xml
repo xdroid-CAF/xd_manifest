@@ -50,7 +50,6 @@
   <remove-project name="device/qcom/sepolicy" />
   <project path="device/qcom/sepolicy" name="xd_device_qcom_sepolicy" remote="xd"/>
   <project path="device/qcom/sepolicy-legacy-um" name="xd_device_qcom_sepolicy-legacy-um" remote="xd"/>
-  <remove-project name="device/qcom/sepolicy_vndr" />
   <project path="device/qcom/sepolicy_vndr" name="xd_device_qcom_sepolicy_vndr" remote="xd"/>
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="xd_system_sepolicy" remote="xd"/>
