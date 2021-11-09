@@ -27,9 +27,6 @@
   <remove-project name="device/google/trout"/>
   <remove-project name="device/google/vrservices"/>
 
-  <!-- Hardware Repo -->
-  <remove-project name="platform/hardware/qcom/bootctrl" />  
-
   <!-- Kernel Repo -->
   <remove-project name="kernel/msm-5.4" />
   <remove-project name="platform/vendor/opensource/audio-kernel" />
