@@ -22,6 +22,9 @@
 <remote   name="xd"
           fetch="https://github.com/xdroid-CAF/"
           revision="twelve"/>
+<remote   name="xd11"
+          fetch="https://github.com/xdroid-CAF/"
+          revision="eleven"/>
 
 <!-- xyzprjkt Remote Repository -->
 <remote   name="xyz-prjkt"
@@ -38,7 +41,6 @@
 
   <!-- Tracked Repository -->
   <include name="caf_system.xml"/>
-  <include name="caf_vendor.xml"/>
   <include name="obsolete.xml"/>
   <include name="xd_system.xml"/>
   <include name="xd_vendor.xml"/>
