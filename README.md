@@ -1,5 +1,5 @@
 ![XD](https://github.com/xyz-prjkt/xyz_assets/raw/main/xd_manifest.png)
-# xdroidCAF | rev1.6 redwhite
+# xdroidCAF | LA.QSSI.11 Android 11
 a android based on CAF with Minimalist UI Design.
 
 ### Requirements
