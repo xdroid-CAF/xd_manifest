@@ -69,6 +69,7 @@
   <remove-project name="platform/packages/apps/SettingsIntelligence"/>
   <remove-project name="platform/packages/apps/CellBroadcastReceiver"/>
   <remove-project name="platform/packages/apps/ThemePicker"/>
+  <remove-project name="platform/packages/apps/Nfc"/>
   <remove-project name="platform/packages/providers/ContactsProvider"/>
   <remove-project name="platform/packages/providers/TelephonyProvider"/>
   <remove-project name="platform/packages/services/Telephony"/>
