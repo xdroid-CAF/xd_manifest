@@ -21,7 +21,7 @@
   </project>
 
   <!-- Device Repo -->
-  <project path="device/qcom/qssi" name="device_qcom_common" remote="xd"/>
+  <project path="device/qcom/qssi" name="xd_device_qcom_common" remote="xd"/>
 
   <!-- External Repo -->
   <project path="external/colorkt" name="xd_external_colorkt" remote="xd"/>
