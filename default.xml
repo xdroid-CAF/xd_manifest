@@ -7,16 +7,10 @@
           review="codeaurora.org"/>
 
 <!-- Code Aurora Forum System Default Revision -->
-<default  revision="refs/tags/LA.QSSI.12.0.r1-04900.03-qssi.0"
+<default  revision="refs/tags/LA.QSSI.12.0.r1-05000.01-qssi.0"
           remote="caf_system"
           sync-j="8"
           sync-c="true"/>
-
-<!-- Code Aurora Forum Vendor Repository -->
-<remote   name="caf_vendor"
-          fetch="https://source.codeaurora.org/quic/la"
-          review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.14.r1-18300.02-LAHAINA.QSSI12.0"/>
 
 <!-- xdCAF Open Source Project Remote Repository -->
 <remote   name="xd"
@@ -38,10 +32,10 @@
 
   <!-- Tracked Repository -->
   <include name="caf_system.xml"/>
-  <include name="caf_vendor.xml"/>
   <include name="obsolete.xml"/>
   <include name="xd_system.xml"/>
   <include name="xd_vendor.xml"/>
   <include name="xd_hw.xml"/>
+  <include name="others.xml"/>
 
 </manifest>

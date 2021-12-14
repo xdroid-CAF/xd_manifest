@@ -21,18 +21,21 @@
   </project>
 
   <!-- Device Repo -->
-  <remove-project name="device/qcom/common" />
-  <project path="device/qcom/common" name="xd_device_qcom_common" remote="xd" >
-    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
+  <project path="device/qcom/qssi" name="device_qcom_common" remote="xd"/>
 
   <!-- External Repo -->
   <project path="external/colorkt" name="xd_external_colorkt" remote="xd"/>
   <project path="external/themelib" name="xd_external_themelib" remote="xd"/> 
+  <remove-project name="platform/external/json-c"/>
+  <project path="external/json-c" name="xd_external_json-c" remote="xd"/>
+  <remove-project name="platform/external/tinycompress"/>
+  <project path="external/tinycompress" name="xd_external_tinycompress" remote="xd"/>
 
   <!-- Framework Repo -->
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="xd_frameworks_base" remote="xd"/>
+  <remove-project name="platform/frameworks/native"/>
+  <project path="frameworks/native" name="xd_frameworks_native" remote="xd"/>
 
   <!-- Packages Repo -->
   <remove-project name="platform/packages/apps/Settings" />
@@ -49,7 +52,6 @@
   <project path="prebuilts/extract-tools" name="xd_prebuilts_extract-tools" remote="xd" clone-depth="1"/>
   <project path="prebuilts/tools-xdroid" name="xd_prebuilts_tools-xdroid" remote="xd" clone-depth="1"/>
   <project path="tools/extract-utils" name="xd_tools_extract-utils" remote="xd"/>
-  <!-- project path="prebuilts/clang/host/linux-x86/clang-xRageTC_lto" name="xRageTC-clang" revision="xRageTC_lto" remote="xyz-prjkt"/ -->
 
   <!-- Sepolicy Repo -->
   <project path="device/xdroid/sepolicy" name="xd_device_xdroid_sepolicy" remote="xd"/>
@@ -66,11 +68,17 @@
   <project path="system/core" name="xd_system_core" remote="xd"/>
   <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="xd_system_tools_hidl" remote="xd"/> 
+  <remove-project name="platform/system/vold"/>
+  <project path="system/vold" name="xd_system_vold" remote="xd"/>
+  <remove-project name="platform/system/security"/>
+  <project path="system/security" name="xd_system_security" remote="xd"/>
 
   <!-- Others Common -->
   <remove-project name="platform/libcore" />
   <project path="libcore" name="xd_libcore" remote="xd"/>
   <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="xd_bootable_recovery" remote="xd"/>
+  <remove-project name="platform/bionic"/>
+  <project path="bionic" name="xd_bionic" remote="xd"/>
 
 </manifest>

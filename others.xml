@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+           revision="refs/heads/lineage-18.1"/>
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           revision="refs/heads/arrow-12.0" />
+
+  <!-- External Repos -->
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage"/>
+
+  <!-- QCOM Hals Repos -->
+  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="lineage" revision="lineage-18.1-caf"/>
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="lineage" revision="lineage-18.1-caf"/>
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineage"/>
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage"/>
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="lineage" clone-depth="1"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="lineage" clone-depth="1"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="lineage" clone-depth="1"/>
+  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9"/>
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" remote="lineage" clone-depth="1"/>
+  <project path="prebuilts/tools-xdroid" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1"/>
+
+  <!-- Vendor Repos -->
+  <remove-project name="platform/vendor/qcom-opensource/audio"/>
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage"/>
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw"/>
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage"/>
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="lineage"/>
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="lineage"/>
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arrow" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arrow" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="lineage"/>
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="lineage"/>
+
+  <!-- System Repos -->
+  <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage"/>
+  <remove-project name="platform/system/tools/mkbootimg"/>
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="lineage"/>
+
+</manifest>
