@@ -86,7 +86,6 @@
   <project path="packages/apps/ThemePicker" name="xd_packages_apps_ThemePicker" remote="xdroid"/>
   <project path="packages/apps/Updater" name="xd_packages_apps_Updater" remote="xdroid"/>
   <project path="packages/apps/SoftAPManager" name="xd_packages_apps_SoftAPManager" remote="xdroid"/>
-  <project path="packages/apps/GamingMode" name="xd_packages_apps_GamingMode" remote="xdroid"/>
   <project path="packages/apps/Nfc" name="xd_packages_apps_Nfc" remote="xdroid"/>
   <project path="packages/providers/ContactsProvider" name="xd_packages_providers_ContactsProvider" remote="xdroid"/>
   <project path="packages/providers/TelephonyProvider" name="xd_packages_providers_TelephonyProvider" remote="xdroid"/>
