@@ -8,7 +8,7 @@ a android based on CAF with Minimalist UI Design.
 
 ### Sync our source ###
 ```bash
-        repo init -u https://github.com/xdroid-CAF/xd_manifest -b eleven
+        repo init -u https://github.com/xdroid-CAF/xd_manifest -b patch-1
 ```
 ```bash
         repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
