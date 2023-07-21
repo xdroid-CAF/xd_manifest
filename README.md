@@ -1,6 +1,6 @@
 ![XD](https://github.com/xyz-prjkt/xyz_assets/raw/main/xd_manifest.png)
-# xdroidCAF | LA.QSSI.11 Android 11
-a android based on CAF with Minimalist UI Design.
+# xdroidCAF Fork | LA.QSSI.11 Android 11
+a android based on CLO with Minimalist UI Design.
 
 ### Requirements
 - Around 500GB disk space.
@@ -8,7 +8,7 @@ a android based on CAF with Minimalist UI Design.
 
 ### Sync our source ###
 ```bash
-        repo init -u https://github.com/xdroid-CAF/xd_manifest -b patch-1
+        repo init -u https://github.com/kreiorogit/xd_manifest -b patch-1
 ```
 ```bash
         repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
