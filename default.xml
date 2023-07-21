@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote   name="caf"
-          fetch="https://source.codeaurora.org/quic/la/"
-          review="codeaurora.org"/>
+<remote   name="clo"
+          fetch="https://git.codelinaro.org/quic/la/"
+          review="codelinaro.org"/>
 
 <default  revision="refs/tags/LA.QSSI.11.0.r1-14800-qssi.0"
-          remote="caf"
+          remote="clo"
           sync-j="8"
           sync-c="true"/>
 
