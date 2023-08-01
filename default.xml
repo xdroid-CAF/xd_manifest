@@ -13,7 +13,6 @@
 <remote   name="github"
           fetch="https://github.com"/>
 
-  <include name="obsolete.xml"/>
   <include name="xdroid.xml"/>
   <include name="lineage.xml"/>
 
