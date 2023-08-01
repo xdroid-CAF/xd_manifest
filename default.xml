@@ -14,47 +14,6 @@
           fetch="https://github.com"/>
 
           
-  <project name="device/common"/>
-  <project name="device/generic/arm64"/>
-  <project name="device/generic/armv7-a-neon"/>
-  <project name="device/generic/art"/>
-  <project name="device/generic/car"/>
-  <project name="device/generic/common"/>
-  <project name="device/generic/goldfish"/>
-  <project name="device/generic/goldfish-opengl"/>
-  <project name="device/generic/mini-emulator-arm64"/>
-  <project name="device/generic/mini-emulator-armv7-a-neon"/>
-  <project name="device/generic/mini-emulator-x86"/>
-  <project name="device/generic/mini-emulator-x86_64"/>
-  <project name="device/generic/opengl-transport"/>
-  <project name="device/generic/qemu"/>
-  <project name="device/generic/trusty"/>
-  <project name="device/generic/uml"/>
-  <project name="device/generic/x86"/>
-  <project name="device/generic/x86_64"/>
-  <project name="device/google/atv"/>
-  <project name="device/google/contexthub"/>
-  <project name="device/google/cuttlefish"/>
-  <project name="device/google/cuttlefish_kernel"/>
-  <project name="device/google/cuttlefish_vmm"/>
-  <project name="device/google/vrservices"/>
-  <project name="device/google_car"/>
-  <project name="device/linaro/dragonboard"/>
-  <project name="device/linaro/dragonboard-kernel"/>
-  <project name="device/linaro/poplar"/>
-  <project name="device/linaro/poplar-kernel"/>
-  <project name="device/qcom/qssi"/>
-  <project name="device/qcom/qssi_32"/>
-  <project name="device/qcom/qssi_32go"/>
-  <project name="device/qcom/sepolicy"/>
-  <project name="device/sample"/>
-  <project name="kernel/configs"/>
-  <project name="kernel/prebuilts/4.19/arm64"/>
-  <project name="kernel/tests"/>
-  <project name="platform/art" path="art"/>
-  <project name="platform/bionic" path="bionic"/>
-  <project name="platform/bootable/recovery" path="bootable/recovery"/>
-  <project name="platform/build" path="build/make">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
