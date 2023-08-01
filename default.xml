@@ -13,8 +13,7 @@
 <remote   name="github"
           fetch="https://github.com"/>
 
-  <project name="device/amlogic/yukawa"/>
-  <project clone-depth="2" name="device/amlogic/yukawa-kernel"/>
+          
   <project name="device/common"/>
   <project name="device/generic/arm64"/>
   <project name="device/generic/armv7-a-neon"/>
