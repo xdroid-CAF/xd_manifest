@@ -5,10 +5,10 @@
           fetch="https://git.codelinaro.org/clo/la/"
           review="codelinaro.org"/>
 
-<default  revision="refs/tags/LA.QSSI.11.0.r1-14800-qssi.0"
-          remote="clo-la"
+<default  remote="clo-la"
           sync-j="8"
-          sync-c="true"/>
+          sync-c="true"
+          sync-tags="false"/>
 
 <remote   name="github"
           fetch="https://github.com"/>
